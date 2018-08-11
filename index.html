@@ -15,6 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- CSS file link -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Google Font Link  -->
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
     <!-- moment.js link -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
@@ -23,8 +25,9 @@
 <body>
     <div class="container col-md-10">
         <div class="header">
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand">Movies N Stuff</a>
+                <nav class="navbar navbar-dark bg-dark">
+
+                <a class="navbar-brand" id="title">Movies N Stuff</a>
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search for a Movie" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -64,19 +67,19 @@
         </div>
 
         <div class="movieSorter">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Movie Selection</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-justified">
+                <a class="navbar-brand movieSelection" href="#">Movie Selection</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">New releases
+                        <a class="nav-item nav-link active newReleases" href="#">New Releases
                             <span class="sr-only">(current)</span>
                         </a>
-                        <a class="nav-item nav-link" href="#">Upcoming Releases</a>
-                        <a class="nav-item nav-link" href="#">Highest Reviewed</a>
+                        <a class="nav-item nav-link upcomingReleases" href="#">Upcoming Releases</a>
+                        <a class="nav-item nav-link  highestReviewed" href="#">Highest Reviewed</a>
                     </div>
                 </div>
             </nav>
