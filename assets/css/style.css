@@ -38,7 +38,8 @@ body {
     width: 30%;    
     color: rgb(63, 231, 253) !important;
     font-size: 28px;
-    text-align: center;
+    /* text-align: center; */
+
 }
 
 .newReleases {
