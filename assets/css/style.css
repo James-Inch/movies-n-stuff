@@ -8,7 +8,11 @@ body {
     font-family: 'Contrail One', cursive;
     font-weight: 500;
     color: rgb(63, 231, 253);
+<<<<<<< HEAD
     
+=======
+    opacity: .9;
+>>>>>>> 0e74149b6a3bacce370e77e3c461c2ca9949e7d0
 }
 
 /* need to fix so searchbar shows placeholder, stays grey */
@@ -24,6 +28,7 @@ body {
 
 .movieSorter {
     margin-top: 20px;
+    opacity: .9;
 }
 
 #title {
@@ -60,3 +65,14 @@ body {
     /* margin: 0 30px 0  */
 }
 
+<<<<<<< HEAD
+=======
+.card-deck {
+    margin-top: 30px;
+}
+
+.navbar-inner, .navbar .btn-navbar {
+
+    border: 0px;
+}
+>>>>>>> 0e74149b6a3bacce370e77e3c461c2ca9949e7d0
