@@ -8,6 +8,7 @@ body {
     font-family: 'Contrail One', cursive;
     font-weight: 500;
     color: rgb(63, 231, 253);
+    
 }
 
 /* need to fix so searchbar shows placeholder, stays grey */
@@ -58,5 +59,4 @@ body {
     font-size: 20px;
     /* margin: 0 30px 0  */
 }
-
 
