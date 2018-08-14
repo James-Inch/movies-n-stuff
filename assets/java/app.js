@@ -10,7 +10,7 @@ var settings = {
   $.ajax(settings).done(function(response) {
     console.log(response);
 
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 9; i++) {
       var results = response.results;
         
         //  variable to store image

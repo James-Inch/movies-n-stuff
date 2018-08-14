@@ -15,6 +15,7 @@ body {
 .form-control {
     background-color: grey;
     border-radius: 50px;
+    color: rgb(63, 231, 253);
 }
 
 .btn { 
@@ -22,7 +23,6 @@ body {
     color: rgb(63, 231, 253);
     border-radius: 50px;
     font-size: 18px;
-
 }
 
 .movieSorter {
@@ -80,7 +80,24 @@ body {
     border-radius: 50px;
 }
 
+/* actual images of movies */
 .card-img-top {
-    height: 400px;
-    width: 200px;
+    height: 520px;
+    width: 360px;
+    border-radius: 50px !important;
+    
+    
+}
+
+img {
+    
+}
+
+.row {
+    margin-bottom: 30px;
+  
+}
+
+.card-deck {
+    justify-content: center;
 }
