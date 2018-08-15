@@ -15,6 +15,7 @@ body {
 .form-control {
     background-color: grey;
     border-radius: 50px;
+    color: rgb(63, 231, 253);
 }
 
 .btn { 
@@ -22,7 +23,6 @@ body {
     color: rgb(63, 231, 253);
     border-radius: 50px;
     font-size: 18px;
-
 }
 
 .movieSorter {
@@ -64,3 +64,43 @@ body {
     font-size: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.card-deck {
+    margin-top: 30px;
+}
+
+.navbar {
+    border-radius: 50px;
+}
+
+.carousel-inner {
+    border-radius: 50px;
+}
+
+.card {
+    border-radius: 50px;
+}
+
+/* actual images of movies */
+.card-img-top {
+    height: 520px;
+    width: 360px;
+    border-radius: 50px !important;
+    
+    
+}
+
+img {
+    
+}
+
+.row {
+    margin-bottom: 30px;
+  
+}
+
+.card-deck {
+    justify-content: center;
+}
+>>>>>>> baa513218220debc57a0c144ece4fd34e8ebf026
