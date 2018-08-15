@@ -10,7 +10,7 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);
 
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < 9; i++) {
     var results = response.results;
 
     //  variable to store image
@@ -23,4 +23,13 @@ $.ajax(settings).done(function (response) {
   }
 });
 
-
+// config firebase
+var config = {
+  apiKey: "AIzaSyA5KFzy1LdpI-YvaxhnIDzaeQoKr_SNqUE",
+  authDomain: "movies-n-stuff-213423.firebaseapp.com",
+  databaseURL: "https://movies-n-stuff-213423.firebaseio.com",
+  projectId: "movies-n-stuff-213423",
+  storageBucket: "",
+  messagingSenderId: "504975234986"
+};
+firebase.initializeApp(config);
