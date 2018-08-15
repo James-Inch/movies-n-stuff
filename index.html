@@ -20,6 +20,9 @@
     <!-- moment.js link -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
 </head>
 
 <body>
@@ -67,7 +70,7 @@
         </div>
 
         <div class="movieSorter">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand movieSelection" href="#">Movie Selection</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -90,11 +93,11 @@
         <div class="card-deck">
 
             <div class="row">
-                <div class="card">
-                    <img class="card-img-top" id="card-0" alt="Card image cap">
+                <div class="card">  
+                        <a data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                            <img class="card-img-top" id="card-0" alt="Card image cap">
+                        </a>  
                 </div>
-
-
                 <div class="card">
                     <img class="card-img-top" id="card-1" alt="Card image cap">
                 </div>
