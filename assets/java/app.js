@@ -7,6 +7,19 @@ var settings = {
     "data": "{}"
   }
   
-  $.ajax(settings).done(function (response) {
+  $.ajax(settings).done(function(response) {
     console.log(response);
-  });   
+
+    for (var i = 0; i < 3; i++) {
+      var results = response.results;
+        
+        //  variable to store image
+        var posterLink = results[i].poster_path;
+
+        var image = "http://image.tmdb.org/t/p/w185/" + posterLink;
+
+        $("#card-" + i).attr("src", image);
+
+  }});  
+
+  
