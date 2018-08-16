@@ -67,16 +67,16 @@ body {
 
 .card {
     border-radius: 50px;
+    padding: 290px 190px;
+    border-radius: 50px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 }
 
 /* actual images of movies */
-.card-img-top {
-    height: 520px;
-    width: 360px;
-    border-radius: 50px !important;
-    
-    
-}
+
 
 .row {
     margin-bottom: 30px;
@@ -86,3 +86,5 @@ body {
 .card-deck {
     justify-content: center;
 }
+
+

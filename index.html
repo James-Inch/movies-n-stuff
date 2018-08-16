@@ -8,7 +8,7 @@
     <title>Movies N Stuff</title>
 
     <!-- bootstrap cdn link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <!-- bootswatch -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/slate/bootstrap.min.css">
     <!-- jQuery link -->
@@ -19,10 +19,10 @@
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
     <!-- moment.js link -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+     <!-- FancyBox Modal Plugin -->
+        <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
 </head>
 
@@ -32,10 +32,7 @@
             <nav class="navbar navbar-dark bg-dark">
 
                 <a class="navbar-brand" id="title">Movies N Stuff</a>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search for a Movie" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+
             </nav>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide active" data-ride="carousel">
@@ -94,67 +91,57 @@
         <div class="card-deck">
 
             <div class="row">
-                <div class="card">  
-                        <a data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
-                            <img class="card-img-top" id="card-0" alt="Card image cap">
-                        </a>  
+                <div class="card" id="card-0" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+
                 </div>
-                <div class="card">
-                    <img class="card-img-top" id="card-1" alt="Card image cap">
+                <div class="card" id="card-1" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+
                 </div>
 
-                <div class="card">
-                    <img class="card-img-top" id="card-2" alt="Card image cap">
+                <div class="card" id="card-2" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="card" id="card-3" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                </div>
+
+                <div class="card" id="card-4" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                </div>
+                <div class="card" id="card-5" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
                 </div>
 
             </div>
 
             <div class="row">
 
-                <div class="card">
-                    <img class="card-img-top" id="card-3" alt="Card image cap">
+                <div class="card" id="card-6" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                </div>
+                <div class="card" id="card-7" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
                 </div>
 
-                <div class="card">
-                    <img class="card-img-top" id="card-4" alt="Card image cap">
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" id="card-5" alt="Card image cap">
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="card">
-                    <img class="card-img-top" id="card-6" alt="Card image cap">
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" id="card-7" alt="Card image cap">
-                </div>
-
-                <div class="card">
-                    <img class="card-img-top" id="card-8" alt="Card image cap">
+                <div class="card" id="card-8" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
                 </div>
 
             </div>
 
         </div>
 
+    </div>
 
+    <!-- Our JavaScript link -->
+    <script src="assets/java/app.js"></script>
 
-        <!-- Our JavaScript link -->
-        <script src="assets/java/app.js"></script>
-
-        <!-- Bootstrap JavaScript link -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript link -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script> -->
 
 </body>
 
