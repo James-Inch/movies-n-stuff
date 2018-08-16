@@ -18,8 +18,7 @@ var settings = {
 
         var image = "http://image.tmdb.org/t/p/w185/" + posterLink;
 
-        $("#card-" + i).attr("src", image);
-
+        $("#card-" + i).css("background-image", "url(" + image + ")");
   }});  
 
   
