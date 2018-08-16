@@ -20,6 +20,8 @@ $.ajax(settings).done(function (response) {
 
     $("#card-" + i).attr("src", image);
 
+    $("#card-" + i).css("background-image", "url(" + image + ")");
+
   }
 });
 
