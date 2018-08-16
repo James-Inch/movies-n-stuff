@@ -47,17 +47,6 @@ body {
 
 }
 
-.newReleases {
-  
-}
-
-.upcomingReleases {
-  
-}
-
-.highestReviewed {
-   
-}
 
 .nav-item {
     padding: 20px 65px 20px 65px !important;
@@ -83,14 +72,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 /* actual images of movies */
 
-
-img {
-    
-}
 
 .row {
     margin-bottom: 30px;
@@ -100,3 +86,5 @@ img {
 .card-deck {
     justify-content: center;
 }
+
+
