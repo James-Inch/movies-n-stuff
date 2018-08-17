@@ -6,33 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movies N Stuff</title>
-
-    <!-- bootstrap cdn link -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    
     <!-- bootswatch -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/slate/bootstrap.min.css">
     <!-- jQuery link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- CSS file link -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- Google Font Link  -->
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
-    <!-- moment.js link -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-     <!-- FancyBox Modal Plugin -->
-        <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-
+    <!-- FancyBox Modal Plugin -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">    
+    <!-- CSS file link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
 <body>
-    <div class="container col-md-9">
+    <div class="container col-10 col-md-10">
         <div class="header">
             <nav class="navbar navbar-dark bg-dark">
 
                 <a class="navbar-brand" id="title">Movies N Stuff</a>
-
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                </div>
             </nav>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide active" data-ride="carousel">
@@ -91,38 +93,37 @@
         <div class="card-deck">
 
             <div class="row">
-                <div class="card" id="card-0" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
-
-                </div>
-                <div class="card" id="card-1" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
-
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-0" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
                 </div>
 
-                <div class="card" id="card-2" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
-
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-1" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
                 </div>
 
-            </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-2" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
 
-            <div class="row">
-                <div class="card" id="card-3" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
-                </div>
-
-                <div class="card" id="card-4" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
-                </div>
-                <div class="card" id="card-5" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
                 </div>
 
             </div>
 
             <div class="row">
-
-                <div class="card" id="card-6" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
-                </div>
-                <div class="card" id="card-7" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-3" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
                 </div>
 
-                <div class="card" id="card-8" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-4" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-5" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-6" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-7" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
+                </div>
+
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-8" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8" href="javascript:;">
                 </div>
 
             </div>
@@ -133,15 +134,9 @@
 
     <!-- Our JavaScript link -->
     <script src="assets/java/app.js"></script>
-
-    <!-- Bootstrap JavaScript link -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <!-- Firebase -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <!-- Bootstrap CDN -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script> -->
 
 </body>
 
