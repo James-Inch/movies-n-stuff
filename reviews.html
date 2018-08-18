@@ -13,8 +13,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Google Font Link  -->
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
-    <!-- FancyBox Modal Plugin -->
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!-- FancyBox Modal Plugin -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
     <!-- FontAwesome -->
@@ -22,6 +23,7 @@
         crossorigin="anonymous">
     <!-- CSS file link -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
 </head>
 
 <body>
@@ -44,9 +46,9 @@
             </nav>
         </div>
 
-        <form>
+        <form id="form">
             <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <input name="email" type="text" class="form-control" id="email" placeholder="name@example.com" required>
             </div>
             <div class="form-group">
                 <input id="userName" class="form-control" placeholder="John Wick">
@@ -62,13 +64,12 @@
 
         <div id="reviews-go-here"></div>
     </div>
-
     <!-- Our JavaScript link -->
-    <script src="assets/java/app.js"></script>
-    <!-- Firebase -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="        https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <!-- Our validation link -->        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="assets/java/reviews.js"></script>
 </body>
 
 </html>
