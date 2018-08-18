@@ -84,12 +84,13 @@ body {
 
 
 .row {
+    margin: auto;
     margin-bottom: 30px;
   
 }
 
 .card-deck {
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .fab {
@@ -101,3 +102,25 @@ body {
 
 }
 
+@media only screen and (max-width: 600px) {
+    .card {
+        margin: 20px auto 30px auto;
+        width: 70%;  
+    }
+
+    #title {
+        text-align: center;
+        margin: auto;
+    }
+
+    .icons {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .row {
+        column-count: 3;
+    }
+
+}
