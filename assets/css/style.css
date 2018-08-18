@@ -161,3 +161,35 @@ body {
         margin: auto;
     }
 }
+
+/* comments page */
+.form-control {
+   
+    background-color: #272B30;
+    opacity: .9;
+    color:rgb(63, 231, 253) !important;
+
+}
+.form-control:valid {
+    
+    margin: auto;
+    background-color: #272B30 !important;
+    opacity: .9;
+    color: rgb(63, 231, 253) !important;
+
+    
+}
+
+.textarea.form-control {
+    background-color: #272B30 !important;
+
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
+
+#reviewSubmit {
+    margin: auto !important;
+}
