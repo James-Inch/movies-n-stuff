@@ -13,7 +13,7 @@ body {
 
 /* need to fix so searchbar shows placeholder, stays grey */
 .form-control {
-    background-color: grey;
+    /* background-color: grey; */
     border-radius: 50px;
     color: rgb(63, 231, 253);
 }
@@ -80,6 +80,7 @@ body {
     
 }
 
+
 /* actual images of movies */
 
 
@@ -102,10 +103,38 @@ body {
 
 }
 
+
+
+
+
+
+@media only screen and (max-width: 1160px) {
+    .row {
+        column-count: 3;
+    }
+
+    .card {
+        padding: 180px 120px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .card {
+        padding: 170px 100px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .card {
+        padding: 150px 80px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .card {
         margin: 20px auto 30px auto;
-        width: 70%;  
+        width: 70%; 
+        padding: 200px 60px; 
     }
 
     #title {
@@ -116,11 +145,4 @@ body {
     .icons {
         margin: auto;
     }
-}
-
-@media only screen and (max-width: 1160px) {
-    .row {
-        column-count: 3;
-    }
-
 }
