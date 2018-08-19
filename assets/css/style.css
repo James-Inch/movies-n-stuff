@@ -59,6 +59,8 @@ body {
 .nav-item {
     padding: 20px 65px 20px 65px;
     font-size: 20px;
+    color: rgb(63, 231, 253) !important;
+
 }
 
 .card-deck {
@@ -87,7 +89,7 @@ body {
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -168,7 +170,7 @@ body {
     background-color: #272B30;
     opacity: .9;
     color:rgb(63, 231, 253) !important;
-
+    font-family: 'Contrail One', cursive;
 }
 .form-control:valid {
     
@@ -176,13 +178,11 @@ body {
     background-color: #272B30 !important;
     opacity: .9;
     color: rgb(63, 231, 253) !important;
-
-    
+    font-family: 'Contrail One', cursive;    
 }
 
 .textarea.form-control {
     background-color: #272B30 !important;
-
 }
 
 form {
@@ -192,4 +192,44 @@ form {
 
 #reviewSubmit {
     margin: auto !important;
+    opacity: .85;
+    border: black;
+    font-family: 'Contrail One', cursive;
 }
+
+#reviews-go-here {
+    width: 70%;
+    margin: auto;
+    opacity: .9;
+    margin-top: 40px;
+    font-family: 'Contrail One', cursive;
+}
+
+.jumbotron {
+    background-color: #272B30 !important;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+
+/* hover functions */ 
+
+/* not working as of now */
+/* 
+.hoverText {
+   display: none;
+    background-color: grey !important;
+    color: green;
+    opacity: 1;
+}
+
+.card:hover .hoverText {
+    display: block;
+  
+}
+
+.card:hover {
+    display: none;
+} */
