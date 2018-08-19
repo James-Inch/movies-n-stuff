@@ -1,3 +1,37 @@
+$("#falseEmail").hide();
+
+var falseEmail = false;
+
+$("#email").focusout(function(){
+    checkEmail();
+});
+
+function checkEmail() {
+    var pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    var email = $("#email").val();
+    if (pattern.test(email) && email !== ""){
+        $("#falseEmail").hide();
+
+    } else {
+        $("#falseEmail").show();
+        falseEmail = true;
+    }
+    
+};
+
+$("#form").submit(function(){
+    falseEmail = false;
+
+    checkEmail();
+
+    if (falseEmail === false){
+        return true;
+    } else {
+        return false;
+    }
+    
+});
+
 // config firebase
 var config = {
     apiKey: "AIzaSyA5KFzy1LdpI-YvaxhnIDzaeQoKr_SNqUE",
@@ -57,3 +91,6 @@ database.ref().on("child_added", function (childSnapshot) {
 
     $("#reviews-go-here").append(reviewDiv);
 });
+
+
+
