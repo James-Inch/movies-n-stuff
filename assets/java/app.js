@@ -32,7 +32,11 @@ function getPopularMovies() {
 
                 $("#card-" + i).css("background-image", "url(" + poster + ")");
 
-
+                // card info
+                var title =  popularMoviesData.results[i].original_title;
+                var titleDiv = $('<p>').html(title)
+                $("#hover" + i).append(titleDiv);
+                console.log(title)
             })
 
         }
@@ -71,12 +75,7 @@ function getHighestReviewedMovies() {
 
                 $("#card-" + i).css("background-image", "url(" + poster + ")");
 
-                // card info
-                var title =  topRatedMoviesData.results[i].original_language;
-                var titleDiv = $('<p>').html(title)
-                $("#cardOne").append(titleDiv);
-                console.log(title)
-                console.log(poster)
+                
             })
 
         }

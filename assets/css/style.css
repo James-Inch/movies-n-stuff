@@ -10,6 +10,7 @@
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
+    background: linear-gradient(10deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, .9))
 }
 /* End Video Code*/
 
@@ -193,4 +194,11 @@ h1 {
     width: 0;
     height: 100%;
     transition: all 0.2s ease-in-out;
+  }
+
+  #card1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(63, 231, 253) !important;
+      font-size: 22px;
   }
