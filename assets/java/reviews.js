@@ -2,34 +2,34 @@ $("#falseEmail").hide();
 
 var falseEmail = false;
 
-$("#email").focusout(function(){
+$("#email").focusout(function () {
     checkEmail();
 });
 
 function checkEmail() {
     var pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
     var email = $("#email").val();
-    if (pattern.test(email) && email !== ""){
+    if (pattern.test(email) && email !== "") {
         $("#falseEmail").hide();
 
     } else {
         $("#falseEmail").show();
         falseEmail = true;
     }
-    
+
 };
 
-$("#form").submit(function(){
+$("#form").submit(function () {
     falseEmail = false;
 
     checkEmail();
 
-    if (falseEmail === false){
+    if (falseEmail === false) {
         return true;
     } else {
         return false;
     }
-    
+
 });
 
 // config firebase
@@ -92,12 +92,12 @@ database.ref().on("child_added", function (childSnapshot) {
     $("#reviews-go-here").append(reviewDiv);
 });
 
-$(document).on("click", function(event){     event.preventDefault();
-    $("#emoji_palette_button").emojidexPalette();
-});
 
-$(document).ready(function() {
+
+
+$("#emoji_palette_button").on("click", function (event) {
+    event.preventDefault();
+    $("#emoji_palette_button").emojidexPalette();
     $("body").emojidexReplace();
 });
-
 

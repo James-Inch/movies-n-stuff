@@ -9,7 +9,7 @@
 
 
 // video link for background
-var video = document.getElementById("myVideo");
+// var video = document.getElementById("myVideo");
 
 
 // API KEY FOR MOVIE SITE
