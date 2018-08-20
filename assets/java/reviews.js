@@ -98,11 +98,6 @@ database.ref().on("child_added", function (childSnapshot) {
 $("#emoji_palette_button").on("click", function (event) {
     event.preventDefault();
     $("#emoji_palette_button").emojidexPalette();
+    $("body").emojidexReplace();
 });
-
-// $(document).ready(function () {
-//     $("body").emojidexReplace();
-// });
-
-
 
