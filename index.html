@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movies N Stuff</title>
-
-    <!-- bootswatch -->
+    <!-- Links -->
+    <!-- Bootswatch -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/slate/bootstrap.min.css">
     <!-- jQuery link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,17 +19,20 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
-
-
     <!-- CSS file link -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
 <body>
+    <!-- Background Video Code -->
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/images/film.mov"> Your browser does not support HTML5 video.
+    </video>
+
+
     <div class="container col-11 col-md-11">
         <div class="header">
             <nav class="navbar navbar-dark bg-dark">
-
                 <a class="navbar-brand" id="title">Movies N Stuff</a>
                 <div class="icons">
                     <a target="_blank" href="reviews.html">
@@ -103,7 +106,6 @@
                                 cup into every shot, with the permission of the chain.</p>
                         </div>
                     </div>
-
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -117,7 +119,7 @@
         </div>
 
         <div class="movieSorter">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav id="selector" class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand movieSelection">Movie Selection</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -135,74 +137,74 @@
             </nav>
         </div>
 
-
-
         <div class="card-deck">
-
-            <div class="row justify-content-center">
+            <div class="row justify-content-between">
                 <div class="card col-sm-4 col-md-4 col-lg-3" id="card-0" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
                     href="javascript:;">
-                    <div class="hoverText">
-                        <b></b>
-                    </div>
+                    <!-- Avengers -->
                 </div>
-
-                <div class="card col-sm-4 col-md-4 col-lg-3" id="card-1" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
+                <div class="card col-sm-4 col-md-4 col-lg-3" id="card-1" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/bsLk0NPRFAc"
+                    href="javascript:;">
+                    <!-- The Meg -->
+                </div>
+                <div class="card col-sm-4 col-md-4 col-lg-3" id="card-2" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/D86RtevtfrA"
+                    href="javascript:;">
+                    <!-- Deadpool 2 -->
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-3" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/wb49-oV0F78"
+                    href="javascript:;">
+                    <!-- MI: Fallout -->
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-4" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/KG770hOuT2k"
+                    href="javascript:;">
+                    <!-- Anime -->
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-5" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/xjDjIWPwcPU"
+                    href="javascript:;">
+                    <!-- Black Panther -->
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-6" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/t9QePUT-Yt8"
+                    href="javascript:;">
+                    <!-- Skyscraper -->
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-7" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/Ee5J1x6MuIo"
+                    href="javascript:;">
+                    <!-- Anime -->
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-8" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/kjC1zmZo30U"
                     href="javascript:;">
                 </div>
-
-                <div class="card col-sm-4 col-md-4 col-lg-3" id="card-2" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-9" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/kjC1zmZo30U"
                     href="javascript:;">
-
                 </div>
-
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-10" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/kjC1zmZo30U"
+                    href="javascript:;">
+                </div>
+                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-11" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/kjC1zmZo30U"
+                    href="javascript:;">
+                </div>
             </div>
-
-            <div class="row justify-content-center">
-                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-3" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
-                    href="javascript:;">
-                </div>
-
-                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-4" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
-                    href="javascript:;">
-                </div>
-                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-5" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
-                    href="javascript:;">
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center">
-
-                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-6" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
-                    href="javascript:;">
-                </div>
-                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-7" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
-                    href="javascript:;">
-                </div>
-
-                <div class="card col-sm-6 col-md-4 col-lg-3" id="card-8" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/QwievZ1Tx-8"
-                    href="javascript:;">
-                </div>
-
-            </div>
-
         </div>
-
     </div>
-
+    </div>
+    </div>
+    <!-- Scripts -->
     <!-- Our JavaScript link -->
     <script src="assets/java/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+
     <!-- Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script> -->
+                crossorigin="anonymous"></script> -->
+
+    <!-- AJAX Call -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

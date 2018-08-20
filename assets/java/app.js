@@ -6,6 +6,12 @@
 //   "headers": {},
 //   "data": "{}"
 // }
+
+
+// video link for background
+var video = document.getElementById("myVideo");
+
+// API KEY FOR MOVIE SITE
 var apiBaseURL = 'https://api.themoviedb.org/3/';
 var imageBaseUrl = 'https://image.tmdb.org/t/p/';
 var apiKey = "aa7ab589539224ab4b6e6c3101db8e4a";
