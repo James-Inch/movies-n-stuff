@@ -1,7 +1,17 @@
-body {
+/* body {
     background-image: url("../images/popcorn.jpg");
     background-size: cover;
+} */
+
+/* Video code */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
+/* End Video Code*/
 
 .header {
     height: 120px;
@@ -9,7 +19,6 @@ body {
     font-weight: 500;
     color: rgb(63, 231, 253);  
 }
-
 .carousel-caption {
     top: 0;
     padding-top: 230px;
@@ -23,34 +32,27 @@ body {
 .carousel {
     margin-bottom: 30px;
 }
-
 .form-control {
     
     border-radius: 50px;
     color: rgb(63, 231, 253);
 }
-
 .btn { 
     background-color: grey;
     color: rgb(63, 231, 253);
     border-radius: 50px;
     font-size: 18px;
 }
-
-.movieSorter {
-    
+.movieSorter {  
     opacity: .9;
 }
-
 #title {
     color: rgb(63, 231, 253);
     font-size: 40px;
 }
-
 .movieSorter {
     font-family: 'Contrail One', cursive;
 }
-
 .movieSelection {
     width: 30%;    
     color: rgb(63, 231, 253) !important;
@@ -60,143 +62,105 @@ body {
     padding: 20px 65px 20px 65px;
     font-size: 20px;
     color: rgb(63, 231, 253) !important;
-
 }
-
 .card-deck {
     margin-top: 30px;
 }
-
 .navbar {
     border-radius: 50px;
     opacity: .9;
 }
-
 .nav-item {
     text-align: center;
 }
-
 .carousel-inner {
     border-radius: 50px;
     height: 380px;
 }
-
 .card {
     border-radius: 50px;
-    padding: 220px 150px;
+    padding: 260px 150px;
     border-radius: 50px !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    margin-bottom: 40px !important;
 }
 
-
 /* actual images of movies */
-
-
 .row {
     margin: auto;
-    margin-bottom: 30px;
-  
+    margin-bottom: 30px; 
 }
 .fab {
     padding: 0 10px;
 }
-
 .icons a {
     color: rgb(63, 231, 253) !important;
-
 }
+
 /* Media Queries for resizing images */
-
 @media only screen and (max-width: 1160px) {
-    .row {
-        column-count: 3;
-    }
-
-    .card {
-        padding: 180px 120px;
-    }
     .carousel-caption {
         padding-top: 150px;
     }
-
 }
-
 @media only screen and (max-width: 980px) {
-    .card {
-        padding: 170px 100px;
-    }
-
     .carousel-caption {
         padding-top: 150px;
     }
 }
-
-
-
 @media only screen and (max-width: 910px) {
-    .card {
-        padding: 150px 80px;
-    }
-
     #carousel-container {
         display:none !important;
     }
 }
-
 @media only screen and (max-width: 600px) {
     .card {
-        margin: 20px auto 30px auto;
+        margin: 0 auto 0 auto;
         width: 70%; 
         padding: 200px 60px; 
     }
-
     #title {
         text-align: center;
         margin: auto;
     }
-
     .icons {
         margin: auto;
+    }
+    #selector {
+        margin-top: 20px;
     }
 }
 
 /* comments page */
-.form-control {
-   
+.form-control { 
     background-color: #272B30;
     opacity: .9;
     color:rgb(63, 231, 253) !important;
     font-family: 'Contrail One', cursive;
 }
-.form-control:valid {
-    
+.form-control:valid { 
     margin: auto;
     background-color: #272B30 !important;
     opacity: .9;
     color: rgb(63, 231, 253) !important;
     font-family: 'Contrail One', cursive;    
 }
-
 .textarea.form-control {
     background-color: #272B30 !important;
 }
-
 form {
     width: 70%;
     margin: auto;
 }
-
 #reviewSubmit {
     margin: auto !important;
     opacity: .85;
     border: black;
     font-family: 'Contrail One', cursive;
 }
-
 #reviews-go-here {
     width: 70%;
     margin: auto;
@@ -204,32 +168,9 @@ form {
     margin-top: 40px;
     font-family: 'Contrail One', cursive;
 }
-
 .jumbotron {
     background-color: #272B30 !important;
 }
-
 h1 {
     font-size: 26px;
 }
-
-
-/* hover functions */ 
-
-/* not working as of now */
-/* 
-.hoverText {
-   display: none;
-    background-color: grey !important;
-    color: green;
-    opacity: 1;
-}
-
-.card:hover .hoverText {
-    display: block;
-  
-}
-
-.card:hover {
-    display: none;
-} */
