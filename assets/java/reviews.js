@@ -92,5 +92,11 @@ database.ref().on("child_added", function (childSnapshot) {
     $("#reviews-go-here").append(reviewDiv);
 });
 
+$(document).on("click", function(event){   
+    event.preventDefault();
+    $("#emoji_palette_button").emojidexPalette();
+});
+
+
 
 
