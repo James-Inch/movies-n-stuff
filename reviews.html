@@ -50,12 +50,15 @@
 
         <form id="form">
             <div class="form-group">
-                <label id="falseEmail" style="color:red;">  
+                <label id="falseEmail" style="color:red;">
                     <b>Please enter a valid email.</b>
                 </label>
                 <input name="email" class="form-control" id="email" placeholder="name@example.com">
             </div>
             <div class="form-group">
+                <label id="noName" style="color:red;">
+                    <b>Username must be atleast 2 characters</b>
+                </label>
                 <input id="userName" class="form-control" placeholder="Name">
             </div>
             <div class="form-group">
@@ -65,7 +68,7 @@
                 <textarea class="form-control emojidexify" id="userReview" rows="2" placeholder="Write a review..."></textarea>
             </div>
             <button id="emoji_palette_button" class="btn btn-primary">Add Emoji</button>
-            <button id="reviewSubmit" class="btn btn-primary">Submit</button>
+            <button type="button" id="reviewSubmit" class="btn btn-primary">Submit</button>
         </form>
 
         <div id="reviews-go-here"></div>
