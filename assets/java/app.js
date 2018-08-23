@@ -37,6 +37,15 @@ function getPopularMovies() {
                 var titleDiv = $('<p>').html(title)
                 $("#hover" + i).append(titleDiv);
                 console.log(title)
+                var overview = popularMoviesData.results[i].overview;
+                var overviewDiv = $("<h6>").html(overview)
+                $("#hover" + i).append(overviewDiv);
+                var release = popularMoviesData.results[i].release_date;
+                var releaseDiv = $("<h6>").html("Release Date: " +release)
+                $("#hover" + i).append(releaseDiv);
+                var vote = popularMoviesData.results[i].vote_average;
+                var voteDiv = $("<h6>").html("Average Vote: " + vote)
+                $("#hover" + i).append(voteDiv);
             })
 
         }
@@ -57,6 +66,25 @@ function getUpcomingMovies() {
                 $("#card-" + i).attr("src", poster);
 
                 $("#card-" + i).css("background-image", "url(" + poster + ")");
+
+
+               // card info
+               var title =  topRatedMoviesData.results[i].original_title;
+             
+               var titleDiv = $('<h1>').html(title)
+               $("#hover" + i).html(titleDiv);
+  
+               var overview = topRatedMoviesData.results[i].overview;
+               var overviewDiv = $("<h6>").html(overview)
+               $("#hover" + i).html(overviewDiv);
+  
+               var release = topRatedMoviesData.results[i].release_date;
+               var releaseDiv = $("<h6>").html("Release Date: " +release)
+               $("#hover" + i).html(releaseDiv);
+  
+               var vote = topRatedMoviesData.results[i].vote_average;
+               var voteDiv = $("<h6>").html("Average Vote: " + vote)
+               $("#hover" + i).html(voteDiv);
             })
 
         }
@@ -75,7 +103,22 @@ function getHighestReviewedMovies() {
 
                 $("#card-" + i).css("background-image", "url(" + poster + ")");
 
-                
+                var title =  topRatedMoviesData.results[i].original_title;
+             
+                var titleDiv = $('<h1>').html(title)
+                $("#hover" + i).html(titleDiv);
+   
+                var overview = topRatedMoviesData.results[i].overview;
+                var overviewDiv = $("<h6>").html(overview)
+                $("#hover" + i).html(overviewDiv);
+   
+                var release = topRatedMoviesData.results[i].release_date;
+                var releaseDiv = $("<h6>").html("Release Date: " +release)
+                $("#hover" + i).html(releaseDiv);
+   
+                var vote = topRatedMoviesData.results[i].vote_average;
+                var voteDiv = $("<h6>").html("Average Vote: " + vote)
+                $("#hover" + i).html(voteDiv);  
             })
 
         }
