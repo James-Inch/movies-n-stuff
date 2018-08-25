@@ -28,7 +28,7 @@ $(document).ready(function () {
     };
 
     function checkUserName(){
-        var pattern = /^[a-z]{2}$/;
+        var pattern = /^[a-zA-Z]{2,}$/;
         var userName = $("#userName").val();
         
         if (pattern.test(userName) && userName !== ""){
