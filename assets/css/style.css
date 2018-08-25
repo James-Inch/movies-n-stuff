@@ -97,6 +97,7 @@
     color: rgb(63, 231, 253) !important;
 }
 
+
 /* Media Queries for resizing images */
 @media only screen and (max-width: 1160px) {
     .carousel-caption {
@@ -205,13 +206,7 @@ h1 {
     transition: all 0.2s ease-in-out;
   }
 
-  #hover0 {
-    padding-top: 20px;
-    padding-left: 20px;
-    color: rgb(63, 231, 253) !important;
-      font-size: 22px;
-  }
-  #hover1 {
+  #hover0, #hover1, #hover2, #hover3, #hover4, #hover5, #hover6, #hover7, #hover8, #hover9, #hover10, #hover11, #hover12 {
     padding-top: 20px;
     padding-left: 20px;
     color: rgb(63, 231, 253) !important;
